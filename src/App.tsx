@@ -12,6 +12,7 @@ import HistoryPage from "./components/HistoryPage";
 import TomorrowPage from "./components/TomorrowPage";
 import RecipeDetail from "./components/RecipeDetail";
 import AddRecipePage from "./components/AddRecipePage";
+import SearchDrawer from "./components/SearchDrawer";
 
 export default function App() {
   const activeTab = useStore((s) => s.activeTab);
@@ -30,6 +31,7 @@ export default function App() {
   const [showShareImport, setShowShareImport] = useState(false);
   const [sharedRecipeIds, setSharedRecipeIds] = useState<string[]>([]);
   const [showAddRecipe, setShowAddRecipe] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
 
   useEffect(() => {
     init();
@@ -52,6 +54,9 @@ export default function App() {
   if (showAddRecipe) {
     return <AddRecipePage onClose={() => setShowAddRecipe(false)} />;
   }
+  if (showSearch) {
+    return <SearchDrawer onClose={() => setShowSearch(false)} />;
+  }
 
   if (showKidsPage) {
     return (<><KidsPage /><CuisineDrawer /></>);
@@ -61,7 +66,7 @@ export default function App() {
 
   return (
     <div className="min-h-dvh pb-16">
-      <TopBar />
+      <TopBar onOpenSearch={() => setShowSearch(true)} />
       {activeTab === "home" && <HomePage />}
       {activeTab === "cuisine" && <CuisinePage />}
       {activeTab === "fridge" && <FridgePage />}

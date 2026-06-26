@@ -59,7 +59,8 @@ export default function AddRecipePage({ onClose }: Props) {
     existing.push(recipe);
     saveCustomRecipes(existing);
     setSaved(true);
-    setTimeout(() => onClose(), 1000);
+    // Trigger reload to merge custom recipe into app
+    setTimeout(() => window.location.reload(), 800);
   };
 
   return (
@@ -192,9 +193,13 @@ export default function AddRecipePage({ onClose }: Props) {
           </div>
 
           {/* Save */}
-          <button onClick={save}
-            disabled={!name.trim() || mainIngs.length === 0 || steps.length === 0}
-            className="w-full py-3 bg-orange-500 text-white rounded-2xl font-medium text-sm disabled:opacity-40 disabled:cursor-not-allowed active:bg-orange-600">
+          <button onClick={() => {
+            if (!name.trim()) return alert("请填写菜名");
+            if (mainIngs.length === 0) return alert("请添加主要食材（输入后点+或回车）");
+            if (steps.length === 0) return alert("请添加做菜步骤（输入后点+或回车）");
+            save();
+          }}
+            className="w-full py-3 bg-orange-500 text-white rounded-2xl font-medium text-sm active:bg-orange-600">
             保存菜品
           </button>
         </>)}

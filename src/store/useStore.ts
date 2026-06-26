@@ -4,6 +4,14 @@ import { loadUserData, addToHistory, toggleFavorite, setCuisineFilter, toggleTom
 import { pickRecipe } from "../utils/recommend";
 import recipes from "../data/recipes";
 
+function getMergedRecipes(): Recipe[] {
+  try {
+    const raw = localStorage.getItem("eat-today-custom-recipes");
+    const custom = raw ? JSON.parse(raw) : [];
+    return [...custom, ...recipes];
+  } catch { return recipes; }
+}
+
 interface AppState {
   currentRecipe: Recipe | null;
   filters: RecommendFilters;
@@ -47,26 +55,26 @@ export const useStore = create<AppState>((set, get) => ({
   init: () => {
     const userData = loadUserData();
     const filters = { ...get().filters, cuisine: userData.cuisineFilter };
-    const recipe = pickRecipe(recipes, filters);
+    const recipe = pickRecipe(getMergedRecipes(), filters);
     set({ userData, filters, currentRecipe: recipe });
   },
 
   refresh: () => {
     const { filters, cardKey } = get();
-    const recipe = pickRecipe(recipes, filters);
+    const recipe = pickRecipe(getMergedRecipes(), filters);
     set({ currentRecipe: recipe, cardKey: cardKey + 1, showDetail: false, detailRecipeId: null });
   },
 
   setFilter: (partial) => {
     const filters = { ...get().filters, ...partial };
-    const recipe = pickRecipe(recipes, filters);
+    const recipe = pickRecipe(getMergedRecipes(), filters);
     set({ filters, currentRecipe: recipe, cardKey: get().cardKey + 1, showDetail: false });
   },
 
   setCuisine: (cuisine) => {
     const userData = setCuisineFilter(cuisine);
     const filters = { ...get().filters, cuisine };
-    const recipe = pickRecipe(recipes, filters);
+    const recipe = pickRecipe(getMergedRecipes(), filters);
     set({ userData, filters, currentRecipe: recipe, cardKey: get().cardKey + 1, drawerOpen: false, showDetail: false });
   },
 
@@ -83,5 +91,5 @@ export const useStore = create<AppState>((set, get) => ({
   openKidsPage: () => set({ showKidsPage: true }),
   closeKidsPage: () => set({ showKidsPage: false }),
 
-  getRecipeById: (id) => recipes.find((r) => r.id === id),
+  getRecipeById: (id) => getMergedRecipes().find((r: Recipe) => r.id === id),
 }));
