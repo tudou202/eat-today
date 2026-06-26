@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { useStore } from "../store/useStore";
 import RecipeDetail from "./RecipeDetail";
 import RecipeList from "./RecipeList";
-import { Calendar, ShoppingCart, Trash2, Trash, AlertTriangle } from "lucide-react";
+import { Calendar, ShoppingCart, Trash2, Trash, AlertTriangle, Share2, Check } from "lucide-react";
 
 function getTomorrowLabel(): string {
   const d = new Date();
@@ -24,6 +24,7 @@ export default function TomorrowPage() {
   const markEaten = useStore((s) => s.markEaten);
   const getRecipeById = useStore((s) => s.getRecipeById);
   const [showClearConfirm, setShowClearConfirm] = useState(false);
+  const [copied, setCopied] = useState(false);
   const tomorrow = getTomorrowStr();
 
   const menuRecipes = userData.tomorrowMenu
@@ -71,10 +72,25 @@ export default function TomorrowPage() {
             {menuRecipes.length === 0 ? "还没有安排菜单" : `共 ${menuRecipes.length} 道菜`}
           </p>
           {menuRecipes.length > 0 && (
-            <button onClick={() => setShowClearConfirm(true)}
-              className="flex items-center gap-1 px-2.5 py-1 bg-red-50 text-red-500 rounded-lg text-xs font-medium active:bg-red-100">
-              <Trash className="w-3.5 h-3.5" /> 一键清除
-            </button>
+            <div className="flex gap-1.5">
+              <button onClick={() => {
+                const ids = menuRecipes.map(r => r.id).join(",");
+                const url = `${location.origin}${location.pathname}?share=${encodeURIComponent(ids)}`;
+                const ta = document.createElement("textarea");
+                ta.value = url; ta.style.position = "fixed"; ta.style.left = "-9999px";
+                document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, 99999);
+                document.execCommand("copy"); document.body.removeChild(ta);
+                setCopied(true); setTimeout(() => setCopied(false), 2000);
+              }}
+                className="flex items-center gap-1 px-2.5 py-1 bg-blue-50 text-blue-500 rounded-lg text-xs font-medium active:bg-blue-100">
+                {copied ? <Check className="w-3.5 h-3.5" /> : <Share2 className="w-3.5 h-3.5" />}
+                {copied ? "已复制" : "分享菜单"}
+              </button>
+              <button onClick={() => setShowClearConfirm(true)}
+                className="flex items-center gap-1 px-2.5 py-1 bg-red-50 text-red-500 rounded-lg text-xs font-medium active:bg-red-100">
+                <Trash className="w-3.5 h-3.5" /> 清除
+              </button>
+            </div>
           )}
         </div>
       </div>

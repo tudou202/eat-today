@@ -19551,6 +19551,1823 @@ const recipes: Recipe[] = [
     kidsFriendly: false,
     tags: ["快手","下饭"],
   },
+  // ======= 川菜 =======
+  {
+    id: "shui-zhu-yu",
+    name: "水煮鱼",
+    category: "meat",
+    cuisine: "chuan",
+    difficulty: 3,
+    cookingTime: 30,
+    mainIngredients: ["草鱼","豆芽","干辣椒","花椒"],
+    emoji: "🐟",
+    allIngredients: [
+      {
+        "name": "草鱼",
+        "amount": "1条"
+      },
+      {
+        "name": "豆芽",
+        "amount": "200g"
+      },
+      {
+        "name": "干辣椒",
+        "amount": "一大把"
+      },
+      {
+        "name": "花椒",
+        "amount": "1勺"
+      },
+      {
+        "name": "郫县豆瓣酱",
+        "amount": "1.5勺"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "2勺"
+      },
+      {
+        "name": "淀粉",
+        "amount": "1勺"
+      },
+      {
+        "name": "蛋清",
+        "amount": "1个"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "蒜",
+        "amount": "5瓣"
+      },
+      {
+        "name": "葱",
+        "amount": "2段"
+      }
+    ],
+    steps: [
+      "鱼片成薄片加料酒蛋清淀粉腌制",
+      "豆芽焯水铺大碗底",
+      "油热下豆瓣酱炒红油加姜蒜葱",
+      "加水烧开下鱼片滑散煮1分钟",
+      "连汤倒在豆芽上",
+      "撒干辣椒花椒",
+      "浇滚油激香"
+    ],
+    tips: "鱼片要薄，最后浇热油是灵魂",
+    kidsFriendly: false,
+    tags: ["川菜名菜","麻辣","宴客"],
+  },
+  {
+    id: "mao-xue-wang",
+    name: "毛血旺",
+    category: "meat",
+    cuisine: "chuan",
+    difficulty: 2,
+    cookingTime: 30,
+    mainIngredients: ["鸭血","午餐肉","毛肚","豆芽"],
+    emoji: "🍗",
+    allIngredients: [
+      {
+        "name": "鸭血",
+        "amount": "1盒"
+      },
+      {
+        "name": "午餐肉",
+        "amount": "半罐"
+      },
+      {
+        "name": "毛肚",
+        "amount": "150g"
+      },
+      {
+        "name": "豆芽",
+        "amount": "200g"
+      },
+      {
+        "name": "郫县豆瓣酱",
+        "amount": "1.5勺"
+      },
+      {
+        "name": "干辣椒",
+        "amount": "15个"
+      },
+      {
+        "name": "花椒",
+        "amount": "1勺"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "蒜",
+        "amount": "5瓣"
+      }
+    ],
+    steps: [
+      "鸭血午餐肉切片毛肚洗净",
+      "油热下豆瓣酱炒红油",
+      "加姜蒜干辣椒花椒",
+      "加水烧开下鸭血午餐肉煮3分钟",
+      "下毛肚烫10秒立刻出锅",
+      "浇滚油"
+    ],
+    tips: "毛肚烫10秒就够煮久了咬不动",
+    kidsFriendly: false,
+    tags: ["川菜","麻辣","重口味"],
+  },
+  {
+    id: "fen-zheng-rou",
+    name: "粉蒸肉",
+    category: "meat",
+    cuisine: "chuan",
+    difficulty: 2,
+    cookingTime: 60,
+    mainIngredients: ["五花肉","蒸肉粉","土豆","生抽"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "五花肉",
+        "amount": "400g"
+      },
+      {
+        "name": "蒸肉粉",
+        "amount": "100g"
+      },
+      {
+        "name": "土豆",
+        "amount": "1个"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "老抽",
+        "amount": "半勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "腐乳汁",
+        "amount": "半勺"
+      },
+      {
+        "name": "姜",
+        "amount": "3片"
+      },
+      {
+        "name": "葱",
+        "amount": "2段"
+      }
+    ],
+    steps: [
+      "五花肉切厚片加调料腌制30分钟",
+      "裹上蒸肉粉",
+      "土豆切片铺碗底",
+      "肉片码在土豆上",
+      "上锅蒸50分钟",
+      "倒扣装盘"
+    ],
+    tips: "加腐乳汁是粉蒸肉的秘诀",
+    kidsFriendly: false,
+    tags: ["川菜","蒸菜","经典"],
+  },
+  {
+    id: "ban-li-shao-ji",
+    name: "板栗烧鸡",
+    category: "meat",
+    cuisine: "chuan",
+    difficulty: 2,
+    cookingTime: 40,
+    mainIngredients: ["鸡块","板栗","生抽","冰糖"],
+    emoji: "🍗",
+    allIngredients: [
+      {
+        "name": "鸡块",
+        "amount": "400g"
+      },
+      {
+        "name": "板栗",
+        "amount": "200g"
+      },
+      {
+        "name": "生抽",
+        "amount": "2勺"
+      },
+      {
+        "name": "老抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "冰糖",
+        "amount": "15g"
+      },
+      {
+        "name": "料酒",
+        "amount": "2勺"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "葱",
+        "amount": "2段"
+      }
+    ],
+    steps: [
+      "板栗去皮焯水",
+      "鸡块焯水",
+      "油热下冰糖炒糖色",
+      "下鸡块翻炒上色",
+      "加姜葱料酒生抽老抽和水",
+      "下板栗中火炖25分钟收汁"
+    ],
+    tips: "板栗选去壳冷冻的更方便",
+    kidsFriendly: false,
+    tags: ["川式","下饭","秋季"],
+  },
+  // ======= 湘菜 =======
+  {
+    id: "mao-shi-hong-shao-rou",
+    name: "毛氏红烧肉",
+    category: "meat",
+    cuisine: "xiang",
+    difficulty: 2,
+    cookingTime: 80,
+    mainIngredients: ["五花肉","冰糖","干辣椒","料酒"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "五花肉",
+        "amount": "500g"
+      },
+      {
+        "name": "冰糖",
+        "amount": "30g"
+      },
+      {
+        "name": "干辣椒",
+        "amount": "5个"
+      },
+      {
+        "name": "八角",
+        "amount": "2个"
+      },
+      {
+        "name": "桂皮",
+        "amount": "1块"
+      },
+      {
+        "name": "料酒",
+        "amount": "3勺"
+      },
+      {
+        "name": "生抽",
+        "amount": "2勺"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "葱",
+        "amount": "3段"
+      }
+    ],
+    steps: [
+      "五花肉切块焯水",
+      "炒糖色下五花肉翻炒",
+      "加姜葱干辣椒八角桂皮料酒生抽",
+      "加足量热水大火烧开转小火炖1小时",
+      "大火收汁"
+    ],
+    tips: "毛氏红烧肉不用酱油只用糖色",
+    kidsFriendly: false,
+    tags: ["湘菜名菜","经典","宴客"],
+  },
+  {
+    id: "pi-jiu-ya",
+    name: "啤酒鸭",
+    category: "meat",
+    cuisine: "xiang",
+    difficulty: 2,
+    cookingTime: 50,
+    mainIngredients: ["鸭子","啤酒","干辣椒","八角"],
+    emoji: "🍗",
+    allIngredients: [
+      {
+        "name": "鸭子",
+        "amount": "半只"
+      },
+      {
+        "name": "啤酒",
+        "amount": "1罐"
+      },
+      {
+        "name": "干辣椒",
+        "amount": "8个"
+      },
+      {
+        "name": "八角",
+        "amount": "2个"
+      },
+      {
+        "name": "桂皮",
+        "amount": "1块"
+      },
+      {
+        "name": "生抽",
+        "amount": "2勺"
+      },
+      {
+        "name": "老抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "2勺"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "蒜",
+        "amount": "5瓣"
+      }
+    ],
+    steps: [
+      "鸭块焯水",
+      "油热下鸭块煸至表面金黄",
+      "下姜蒜干辣椒八角桂皮炒香",
+      "加生抽老抽料酒",
+      "倒整罐啤酒",
+      "大火烧开转小火炖40分钟收汁"
+    ],
+    tips: "啤酒代替水去腥增香",
+    kidsFriendly: false,
+    tags: ["湘味","下饭","啤酒香"],
+  },
+  // ======= 鲁菜 =======
+  {
+    id: "guo-bao-rou",
+    name: "锅包肉",
+    category: "meat",
+    cuisine: "lu",
+    difficulty: 3,
+    cookingTime: 25,
+    mainIngredients: ["猪里脊","淀粉","白醋","糖"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "猪里脊",
+        "amount": "300g"
+      },
+      {
+        "name": "土豆淀粉",
+        "amount": "大量"
+      },
+      {
+        "name": "白醋",
+        "amount": "2勺"
+      },
+      {
+        "name": "糖",
+        "amount": "2勺"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "姜",
+        "amount": "3片"
+      },
+      {
+        "name": "胡萝卜",
+        "amount": "少许"
+      },
+      {
+        "name": "葱",
+        "amount": "少许"
+      }
+    ],
+    steps: [
+      "里脊切厚片加料酒腌制",
+      "土豆淀粉加水沉淀成湿淀粉裹肉片",
+      "油温六成热炸至定型捞出",
+      "油温升高复炸至金黄",
+      "调糖醋汁加姜丝胡萝卜丝煮浓",
+      "下肉片快速翻匀"
+    ],
+    tips: "锅包肉=外酥里嫩的极致",
+    kidsFriendly: false,
+    tags: ["东北名菜","酸甜酥脆","功夫菜"],
+  },
+  {
+    id: "jing-jiang-rou-si",
+    name: "京酱肉丝",
+    category: "meat",
+    cuisine: "lu",
+    difficulty: 1,
+    cookingTime: 15,
+    mainIngredients: ["猪里脊","甜面酱","大葱","生抽"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "猪里脊",
+        "amount": "250g"
+      },
+      {
+        "name": "甜面酱",
+        "amount": "1.5勺"
+      },
+      {
+        "name": "大葱",
+        "amount": "2根"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "淀粉",
+        "amount": "1勺"
+      },
+      {
+        "name": "糖",
+        "amount": "少许"
+      },
+      {
+        "name": "豆腐皮",
+        "amount": "几张"
+      }
+    ],
+    steps: [
+      "里脊切丝加料酒淀粉腌制",
+      "大葱切丝铺盘底",
+      "油热下肉丝滑炒至变色",
+      "加甜面酱生抽糖和水",
+      "大火翻炒至酱裹住肉丝",
+      "铺在葱丝上",
+      "配豆腐皮卷着吃"
+    ],
+    tips: "甜面酱要炒到裹住肉丝不散",
+    kidsFriendly: false,
+    tags: ["鲁菜","经典","宴客"],
+  },
+  {
+    id: "xiao-ji-dun-mo-gu",
+    name: "小鸡炖蘑菇",
+    category: "meat",
+    cuisine: "lu",
+    difficulty: 2,
+    cookingTime: 50,
+    mainIngredients: ["鸡块","榛蘑","粉条","八角"],
+    emoji: "🍗",
+    allIngredients: [
+      {
+        "name": "鸡块",
+        "amount": "500g"
+      },
+      {
+        "name": "榛蘑",
+        "amount": "50g泡发"
+      },
+      {
+        "name": "红薯粉条",
+        "amount": "100g"
+      },
+      {
+        "name": "八角",
+        "amount": "2个"
+      },
+      {
+        "name": "生抽",
+        "amount": "2勺"
+      },
+      {
+        "name": "老抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "2勺"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      }
+    ],
+    steps: [
+      "榛蘑提前泡发粉条泡软",
+      "鸡块焯水",
+      "油热下鸡块煸至表面金黄",
+      "加姜八角料酒生抽老抽",
+      "加足量热水和榛蘑",
+      "大火烧开转小火炖30分钟",
+      "下粉条再炖10分钟收汁"
+    ],
+    tips: "榛蘑要提前泡发2小时",
+    kidsFriendly: false,
+    tags: ["东北名菜","暖身","经典"],
+  },
+  // ======= 粤菜 =======
+  {
+    id: "ke-jia-niang-dou-fu",
+    name: "客家酿豆腐",
+    category: "meat",
+    cuisine: "yue",
+    difficulty: 2,
+    cookingTime: 25,
+    mainIngredients: ["老豆腐","猪肉末","生抽","蚝油"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "老豆腐",
+        "amount": "1块"
+      },
+      {
+        "name": "猪肉末",
+        "amount": "150g"
+      },
+      {
+        "name": "虾米",
+        "amount": "20g"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "蚝油",
+        "amount": "1勺"
+      },
+      {
+        "name": "淀粉",
+        "amount": "半勺"
+      },
+      {
+        "name": "葱",
+        "amount": "1根"
+      },
+      {
+        "name": "姜",
+        "amount": "2片"
+      }
+    ],
+    steps: [
+      "豆腐切厚三角片中间挖坑",
+      "肉末加虾米姜末调料调馅",
+      "把肉馅酿入豆腐坑中",
+      "平底锅肉面朝下煎至金黄",
+      "翻面加水生抽蚝油焖5分钟",
+      "淀粉勾芡撒葱花"
+    ],
+    tips: "客家人的招牌菜",
+    kidsFriendly: false,
+    tags: ["粤菜","客家","酿菜"],
+  },
+  // ======= 苏菜 =======
+  {
+    id: "shui-jing-xia-ren-su",
+    name: "水晶虾仁",
+    category: "meat",
+    cuisine: "su",
+    difficulty: 2,
+    cookingTime: 12,
+    mainIngredients: ["虾仁","青豆","蛋清","淀粉"],
+    emoji: "🦐",
+    allIngredients: [
+      {
+        "name": "虾仁",
+        "amount": "250g"
+      },
+      {
+        "name": "青豆",
+        "amount": "30g"
+      },
+      {
+        "name": "蛋清",
+        "amount": "半个"
+      },
+      {
+        "name": "淀粉",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "虾仁加料酒蛋清淀粉上浆",
+      "油温四成热下虾仁滑至变白",
+      "下青豆翻炒",
+      "加盐调味出锅"
+    ],
+    tips: "虾仁晶莹剔透是淮扬功夫",
+    kidsFriendly: true,
+    tags: ["淮扬菜","清淡","宴客"],
+  },
+  {
+    id: "qing-zheng-da-zha-xie",
+    name: "清蒸大闸蟹",
+    category: "meat",
+    cuisine: "su",
+    difficulty: 1,
+    cookingTime: 20,
+    mainIngredients: ["大闸蟹","姜","醋","紫苏"],
+    emoji: "🦐",
+    allIngredients: [
+      {
+        "name": "大闸蟹",
+        "amount": "4只"
+      },
+      {
+        "name": "姜",
+        "amount": "大量"
+      },
+      {
+        "name": "醋",
+        "amount": "3勺"
+      },
+      {
+        "name": "紫苏",
+        "amount": "几片"
+      }
+    ],
+    steps: [
+      "蟹刷洗干净",
+      "蒸锅水加紫苏和料酒",
+      "蟹肚朝上放姜片",
+      "大火蒸15分钟",
+      "姜切末加醋调蘸料"
+    ],
+    tips: "肚朝上蒸蟹黄不流失",
+    kidsFriendly: true,
+    tags: ["苏式","秋季","宴客"],
+  },
+  // ======= 浙菜 =======
+  {
+    id: "jiao-bai-chao-rou-si",
+    name: "茭白炒肉丝",
+    category: "meat",
+    cuisine: "zhe",
+    difficulty: 1,
+    cookingTime: 10,
+    mainIngredients: ["茭白","猪里脊","青椒","生抽"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "茭白",
+        "amount": "3根"
+      },
+      {
+        "name": "猪里脊",
+        "amount": "150g"
+      },
+      {
+        "name": "青椒",
+        "amount": "1个"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "淀粉",
+        "amount": "半勺"
+      },
+      {
+        "name": "蒜",
+        "amount": "2瓣"
+      }
+    ],
+    steps: [
+      "茭白去皮切丝",
+      "里脊切丝加料酒淀粉腌制",
+      "油热下肉丝滑炒至变色",
+      "下蒜末茭白青椒大火翻炒",
+      "加生抽盐翻匀"
+    ],
+    tips: "茭白是江南水八仙之一",
+    kidsFriendly: false,
+    tags: ["浙菜","时令","快手"],
+  },
+  // ======= 家常 =======
+  {
+    id: "hong-shao-dong-gua",
+    name: "红烧冬瓜",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 15,
+    mainIngredients: ["冬瓜","生抽","冰糖","蒜"],
+    emoji: "🍰",
+    allIngredients: [
+      {
+        "name": "冬瓜",
+        "amount": "500g"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "老抽",
+        "amount": "半勺"
+      },
+      {
+        "name": "冰糖",
+        "amount": "10g"
+      },
+      {
+        "name": "蒜",
+        "amount": "3瓣"
+      },
+      {
+        "name": "葱",
+        "amount": "少许"
+      },
+      {
+        "name": "油",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "冬瓜去皮切厚块",
+      "油热下冰糖炒糖色（小火）",
+      "下冬瓜翻炒上色",
+      "加蒜生抽老抽和半碗水",
+      "中火焖8分钟至冬瓜透明",
+      "大火收汁撒葱花"
+    ],
+    tips: "冬瓜焖到透明才入味",
+    kidsFriendly: true,
+    tags: ["素食","下饭","家常"],
+  },
+  {
+    id: "chang-jian-dou-fu",
+    name: "家常豆腐",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 12,
+    mainIngredients: ["老豆腐","木耳","青椒","生抽"],
+    emoji: "🫘",
+    allIngredients: [
+      {
+        "name": "老豆腐",
+        "amount": "1块"
+      },
+      {
+        "name": "木耳",
+        "amount": "30g泡发"
+      },
+      {
+        "name": "青椒",
+        "amount": "1个"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "蚝油",
+        "amount": "1勺"
+      },
+      {
+        "name": "蒜",
+        "amount": "2瓣"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "油",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "豆腐切三角片煎至两面金黄",
+      "木耳撕小朵青椒切块",
+      "油热下蒜末木耳青椒翻炒",
+      "下豆腐加生抽蚝油和少许水焖2分钟"
+    ],
+    tips: "豆腐先煎再烧外焦里嫩",
+    kidsFriendly: true,
+    tags: ["家常","素食","下饭"],
+  },
+  {
+    id: "bai-cai-dun-dou-fu",
+    name: "白菜炖豆腐",
+    category: "soup",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 15,
+    mainIngredients: ["大白菜","豆腐","五花肉","生抽"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "大白菜",
+        "amount": "半棵"
+      },
+      {
+        "name": "豆腐",
+        "amount": "1块"
+      },
+      {
+        "name": "五花肉",
+        "amount": "100g"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "八角",
+        "amount": "1个"
+      },
+      {
+        "name": "姜",
+        "amount": "2片"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "五花肉切片煸出油",
+      "下姜片八角炒香",
+      "下白菜帮翻炒1分钟",
+      "下白菜叶和豆腐",
+      "加水炖10分钟",
+      "加生抽盐调味"
+    ],
+    tips: "白菜炖烂了比肉还香",
+    kidsFriendly: true,
+    tags: ["北方家常","暖身","一锅出"],
+  },
+  {
+    id: "gan-bian-cai-hua",
+    name: "干煸菜花",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 10,
+    mainIngredients: ["花菜","五花肉","干辣椒","生抽"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "花菜",
+        "amount": "半棵"
+      },
+      {
+        "name": "五花肉",
+        "amount": "100g"
+      },
+      {
+        "name": "干辣椒",
+        "amount": "3个"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "蚝油",
+        "amount": "1勺"
+      },
+      {
+        "name": "蒜",
+        "amount": "3瓣"
+      }
+    ],
+    steps: [
+      "花菜掰小朵焯水1分钟控干",
+      "五花肉切薄片",
+      "不放油下五花肉煸出油",
+      "下干辣椒蒜末花菜大火翻炒",
+      "加生抽蚝油翻匀",
+      "炒到花菜表面微焦"
+    ],
+    tips: "花菜要炒出焦香才有干锅味道",
+    kidsFriendly: true,
+    tags: ["下饭","家常","快手"],
+  },
+  {
+    id: "zi-ran-tu-dou",
+    name: "孜然土豆",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 12,
+    mainIngredients: ["土豆","孜然粉","辣椒粉","盐"],
+    emoji: "🍜",
+    allIngredients: [
+      {
+        "name": "土豆",
+        "amount": "2个"
+      },
+      {
+        "name": "孜然粉",
+        "amount": "1勺"
+      },
+      {
+        "name": "辣椒粉",
+        "amount": "半勺"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "油",
+        "amount": "适量"
+      },
+      {
+        "name": "葱",
+        "amount": "少许"
+      }
+    ],
+    steps: [
+      "土豆切小块焯水3分钟捞出",
+      "油热下土豆煎至表面金黄",
+      "撒孜然粉辣椒粉盐翻匀",
+      "撒葱花出锅"
+    ],
+    tips: "土豆先焯再煎外酥里糯",
+    kidsFriendly: true,
+    tags: ["小吃","烧烤风味","快手"],
+  },
+  {
+    id: "dou-chi-hu-pi-qing-jiao",
+    name: "豆豉虎皮青椒",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 8,
+    mainIngredients: ["青椒","豆豉","蒜","生抽"],
+    emoji: "🌶️",
+    allIngredients: [
+      {
+        "name": "青椒",
+        "amount": "6个"
+      },
+      {
+        "name": "豆豉",
+        "amount": "1小勺"
+      },
+      {
+        "name": "蒜",
+        "amount": "3瓣"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "醋",
+        "amount": "半勺"
+      },
+      {
+        "name": "糖",
+        "amount": "少许"
+      },
+      {
+        "name": "油",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "青椒拍扁",
+      "锅中不放油下青椒干煸至表皮焦黑起皱",
+      "推青椒到一边加油下豆豉蒜末炒香",
+      "加生抽醋糖翻匀"
+    ],
+    tips: "青椒要煸到虎皮状才够香",
+    kidsFriendly: true,
+    tags: ["下饭","素食","快手"],
+  },
+  {
+    id: "duo-jiao-bai-cai",
+    name: "剁椒白菜",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 8,
+    mainIngredients: ["大白菜","剁椒","蒜","生抽"],
+    emoji: "🥬",
+    allIngredients: [
+      {
+        "name": "大白菜",
+        "amount": "5片"
+      },
+      {
+        "name": "剁椒",
+        "amount": "1勺"
+      },
+      {
+        "name": "蒜",
+        "amount": "3瓣"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "油",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "白菜帮片薄片叶子撕块",
+      "油热下蒜末剁椒炒香",
+      "先下帮炒1分钟再下叶",
+      "大火快炒加生抽翻匀"
+    ],
+    tips: "加剁椒让白菜更有味",
+    kidsFriendly: true,
+    tags: ["快手","开胃","家常"],
+  },
+  {
+    id: "xiang-gu-dou-fu",
+    name: "香菇烧豆腐",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 12,
+    mainIngredients: ["老豆腐","香菇","蚝油","生抽"],
+    emoji: "🦪",
+    allIngredients: [
+      {
+        "name": "老豆腐",
+        "amount": "1块"
+      },
+      {
+        "name": "香菇",
+        "amount": "6个"
+      },
+      {
+        "name": "蚝油",
+        "amount": "1勺"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "糖",
+        "amount": "少许"
+      },
+      {
+        "name": "淀粉",
+        "amount": "半勺"
+      },
+      {
+        "name": "蒜",
+        "amount": "2瓣"
+      },
+      {
+        "name": "葱",
+        "amount": "少许"
+      }
+    ],
+    steps: [
+      "豆腐切厚片煎至两面金黄",
+      "香菇切片",
+      "油热下蒜末香菇炒香",
+      "加蚝油生抽糖和水",
+      "下豆腐中火焖3分钟",
+      "淀粉勾芡撒葱花"
+    ],
+    tips: "香菇入味的豆腐比肉还香",
+    kidsFriendly: true,
+    tags: ["素食","下饭","家常"],
+  },
+  {
+    id: "qing-chao-wo-sun-pian",
+    name: "清炒莴笋片",
+    category: "veggie",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 6,
+    mainIngredients: ["莴笋","蒜","盐"],
+    emoji: "🎋",
+    allIngredients: [
+      {
+        "name": "莴笋",
+        "amount": "1根"
+      },
+      {
+        "name": "蒜",
+        "amount": "3瓣"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "油",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "莴笋去皮切薄片",
+      "蒜切末",
+      "油热下蒜末爆香",
+      "下莴笋片大火快炒1分钟",
+      "加盐立刻出锅"
+    ],
+    tips: "莴笋要大火快炒保持脆嫩",
+    kidsFriendly: true,
+    tags: ["快手","清淡","春季"],
+  },
+  {
+    id: "gui-hua-tang-ou",
+    name: "桂花糖藕",
+    category: "dessert",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 50,
+    mainIngredients: ["莲藕","糯米","红糖","桂花"],
+    emoji: "🍚",
+    allIngredients: [
+      {
+        "name": "莲藕",
+        "amount": "2节"
+      },
+      {
+        "name": "糯米",
+        "amount": "100g"
+      },
+      {
+        "name": "红糖",
+        "amount": "100g"
+      },
+      {
+        "name": "干桂花",
+        "amount": "少许"
+      },
+      {
+        "name": "牙签",
+        "amount": "几根"
+      }
+    ],
+    steps: [
+      "糯米泡2小时",
+      "莲藕去皮切掉一头",
+      "糯米塞进藕孔用筷子压实",
+      "牙签固定",
+      "加水红糖煮1小时至藕变红",
+      "切片淋汤汁撒桂花"
+    ],
+    tips: "塞糯米要有耐心",
+    kidsFriendly: true,
+    tags: ["江南小吃","甜品","传统"],
+  },
+  {
+    id: "ji-yu-dou-fu-tang",
+    name: "鲫鱼豆腐汤",
+    category: "soup",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 25,
+    mainIngredients: ["鲫鱼","豆腐","姜","料酒"],
+    emoji: "🐟",
+    allIngredients: [
+      {
+        "name": "鲫鱼",
+        "amount": "2条"
+      },
+      {
+        "name": "豆腐",
+        "amount": "1块"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "白胡椒粉",
+        "amount": "少许"
+      },
+      {
+        "name": "葱",
+        "amount": "1根"
+      }
+    ],
+    steps: [
+      "鲫鱼去鳞洗净控干",
+      "油热下鲫鱼煎至两面金黄",
+      "加开水（一定要开水）",
+      "加姜片料酒煮10分钟至汤变白",
+      "下豆腐块煮5分钟",
+      "加盐白胡椒粉葱花"
+    ],
+    tips: "加开水是汤变白的关键",
+    kidsFriendly: true,
+    tags: ["汤品","奶白","鲜香"],
+  },
+  {
+    id: "zha-cai-rou-si-tang",
+    name: "榨菜肉丝汤",
+    category: "soup",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 8,
+    mainIngredients: ["榨菜","猪里脊","鸡蛋","葱"],
+    emoji: "🍗",
+    allIngredients: [
+      {
+        "name": "榨菜",
+        "amount": "半包"
+      },
+      {
+        "name": "猪里脊",
+        "amount": "100g"
+      },
+      {
+        "name": "鸡蛋",
+        "amount": "1个"
+      },
+      {
+        "name": "葱",
+        "amount": "1根"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "淀粉",
+        "amount": "少许"
+      },
+      {
+        "name": "香油",
+        "amount": "几滴"
+      }
+    ],
+    steps: [
+      "里脊切丝加淀粉腌制",
+      "水烧开下榨菜煮1分钟",
+      "下肉丝滑散煮至变色",
+      "淋入蛋液",
+      "加盐香油葱花"
+    ],
+    tips: "榨菜本身有咸味盐要少放",
+    kidsFriendly: true,
+    tags: ["快手","汤品","家常"],
+  },
+  {
+    id: "bo-cai-zhu-gan-tang",
+    name: "菠菜猪肝汤",
+    category: "soup",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 15,
+    mainIngredients: ["猪肝","菠菜","姜","料酒"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "猪肝",
+        "amount": "200g"
+      },
+      {
+        "name": "菠菜",
+        "amount": "1把"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "香油",
+        "amount": "几滴"
+      },
+      {
+        "name": "枸杞",
+        "amount": "10粒"
+      }
+    ],
+    steps: [
+      "猪肝切薄片反复泡水去血水",
+      "菠菜焯水10秒去草酸",
+      "水烧开加姜片下猪肝煮30秒至变色",
+      "下菠菜和枸杞",
+      "加盐香油立刻关火"
+    ],
+    tips: "猪肝不能久煮否则老了",
+    kidsFriendly: true,
+    tags: ["汤品","补血","快手"],
+  },
+  {
+    id: "wu-xiang-niu-rou",
+    name: "酱牛肉",
+    category: "cold",
+    cuisine: "home",
+    difficulty: 2,
+    cookingTime: 120,
+    mainIngredients: ["牛腱子","生抽","老抽","香料包"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "牛腱子",
+        "amount": "500g"
+      },
+      {
+        "name": "生抽",
+        "amount": "3勺"
+      },
+      {
+        "name": "老抽",
+        "amount": "2勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "2勺"
+      },
+      {
+        "name": "冰糖",
+        "amount": "20g"
+      },
+      {
+        "name": "香料包(八角桂皮香叶花椒)",
+        "amount": "1包"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "葱",
+        "amount": "3段"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      }
+    ],
+    steps: [
+      "牛腱子冷水泡2小时去血水",
+      "加所有调料和没过牛肉的水",
+      "大火烧开撇浮沫",
+      "转小火卤1.5小时",
+      "筷子轻松扎透即可",
+      "关火浸泡2小时入味",
+      "捞出冷藏后切薄片"
+    ],
+    tips: "冷藏后切才能切出薄片",
+    kidsFriendly: true,
+    tags: ["凉菜","下酒","宴客"],
+  },
+  {
+    id: "si-chuan-pao-cai",
+    name: "四川泡菜",
+    category: "cold",
+    cuisine: "home",
+    difficulty: 2,
+    cookingTime: 300,
+    mainIngredients: ["白萝卜","胡萝卜","包菜","泡椒"],
+    emoji: "🥬",
+    allIngredients: [
+      {
+        "name": "白萝卜",
+        "amount": "1根"
+      },
+      {
+        "name": "胡萝卜",
+        "amount": "1根"
+      },
+      {
+        "name": "包菜",
+        "amount": "1/4个"
+      },
+      {
+        "name": "泡椒",
+        "amount": "10个"
+      },
+      {
+        "name": "泡椒水",
+        "amount": "半碗"
+      },
+      {
+        "name": "盐",
+        "amount": "3勺"
+      },
+      {
+        "name": "花椒",
+        "amount": "1勺"
+      },
+      {
+        "name": "凉白开",
+        "amount": "适量"
+      },
+      {
+        "name": "白酒",
+        "amount": "1勺"
+      }
+    ],
+    steps: [
+      "蔬菜洗净切块晾干",
+      "玻璃坛子消毒",
+      "盐用凉白开化开",
+      "所有材料入坛加泡椒水花椒白酒",
+      "水没过蔬菜",
+      "密封阴凉处放置3-5天"
+    ],
+    tips: "全程不能沾生水和油",
+    kidsFriendly: true,
+    tags: ["川味泡菜","开胃","传统"],
+  },
+  {
+    id: "yan-shui-ji",
+    name: "盐水鸡",
+    category: "cold",
+    cuisine: "home",
+    difficulty: 2,
+    cookingTime: 60,
+    mainIngredients: ["鸡","花椒盐","料酒","姜"],
+    emoji: "🍗",
+    allIngredients: [
+      {
+        "name": "鸡",
+        "amount": "1只"
+      },
+      {
+        "name": "花椒盐",
+        "amount": "3勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "2勺"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "葱",
+        "amount": "3段"
+      }
+    ],
+    steps: [
+      "鸡处理干净控干",
+      "花椒和盐干锅炒出香味",
+      "用花椒盐抹匀鸡身冷藏腌制4小时",
+      "大锅水加姜葱料酒烧开",
+      "放入鸡大火烧开转小火煮30分钟",
+      "关火焖20分钟",
+      "捞出晾凉斩件"
+    ],
+    tips: "煮后用冰水过一下皮更脆",
+    kidsFriendly: true,
+    tags: ["凉菜","经典","宴客"],
+  },
+  {
+    id: "liang-ban-zhu-er-duo",
+    name: "凉拌猪耳朵",
+    category: "cold",
+    cuisine: "home",
+    difficulty: 2,
+    cookingTime: 30,
+    mainIngredients: ["猪耳朵","蒜","辣椒油","香菜"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "猪耳朵",
+        "amount": "1个"
+      },
+      {
+        "name": "蒜",
+        "amount": "4瓣"
+      },
+      {
+        "name": "辣椒油",
+        "amount": "1勺"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "醋",
+        "amount": "1勺"
+      },
+      {
+        "name": "糖",
+        "amount": "少许"
+      },
+      {
+        "name": "香菜",
+        "amount": "少许"
+      },
+      {
+        "name": "姜",
+        "amount": "5片"
+      },
+      {
+        "name": "料酒",
+        "amount": "2勺"
+      }
+    ],
+    steps: [
+      "猪耳朵加姜片料酒煮40分钟至软",
+      "捞出过冰水切细丝",
+      "加蒜末辣椒油生抽醋糖拌匀",
+      "撒香菜"
+    ],
+    tips: "过冰水让耳丝更脆",
+    kidsFriendly: true,
+    tags: ["凉菜","下酒","经典"],
+  },
+  {
+    id: "lv-dou-zhou",
+    name: "绿豆粥",
+    category: "staple",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 45,
+    mainIngredients: ["绿豆","大米","冰糖"],
+    emoji: "🍚",
+    allIngredients: [
+      {
+        "name": "绿豆",
+        "amount": "100g"
+      },
+      {
+        "name": "大米",
+        "amount": "50g"
+      },
+      {
+        "name": "冰糖",
+        "amount": "适量"
+      },
+      {
+        "name": "水",
+        "amount": "2L"
+      }
+    ],
+    steps: [
+      "绿豆提前泡2小时",
+      "大米淘洗",
+      "一起入锅加水",
+      "大火烧开转小火熬40分钟",
+      "加冰糖搅匀"
+    ],
+    tips: "夏天冰镇喝解暑",
+    kidsFriendly: true,
+    tags: ["粥品","夏季","解暑"],
+  },
+  {
+    id: "ma-yi-shang-shu",
+    name: "蚂蚁上树",
+    category: "staple",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 12,
+    mainIngredients: ["粉丝","猪肉末","郫县豆瓣酱","葱"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "粉丝",
+        "amount": "2把"
+      },
+      {
+        "name": "猪肉末",
+        "amount": "100g"
+      },
+      {
+        "name": "郫县豆瓣酱",
+        "amount": "1勺"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "姜",
+        "amount": "2片"
+      },
+      {
+        "name": "蒜",
+        "amount": "2瓣"
+      },
+      {
+        "name": "葱",
+        "amount": "2根"
+      }
+    ],
+    steps: [
+      "粉丝温水泡软剪短",
+      "油热下肉末煸至酥香",
+      "下豆瓣酱姜蒜炒红油",
+      "加生抽料酒和水",
+      "下粉丝大火翻炒至汤汁收干",
+      "撒大量葱花"
+    ],
+    tips: "肉末像蚂蚁粉丝像树枝",
+    kidsFriendly: true,
+    tags: ["快手","主食","下饭"],
+  },
+  {
+    id: "shou-zhua-bing",
+    name: "手抓饼",
+    category: "staple",
+    cuisine: "home",
+    difficulty: 2,
+    cookingTime: 25,
+    mainIngredients: ["面粉","葱","油","盐"],
+    emoji: "🍜",
+    allIngredients: [
+      {
+        "name": "面粉",
+        "amount": "300g"
+      },
+      {
+        "name": "葱",
+        "amount": "5根"
+      },
+      {
+        "name": "油",
+        "amount": "3勺"
+      },
+      {
+        "name": "盐",
+        "amount": "1勺"
+      }
+    ],
+    steps: [
+      "面粉一半开水一半冷水和成半烫面醒30分钟",
+      "葱切花加油盐调成葱油",
+      "面团擀薄抹葱油",
+      "像扇子一样折起来",
+      "卷成螺旋状压扁擀薄",
+      "平底锅中小火烙至两面金黄",
+      "用铲子从两边往中间推打出层次"
+    ],
+    tips: "推打出层次是关键",
+    kidsFriendly: true,
+    tags: ["北方","早餐","主食"],
+  },
+  {
+    id: "yu-song-ban-fan",
+    name: "鱼松拌饭",
+    category: "staple",
+    cuisine: "home",
+    difficulty: 1,
+    cookingTime: 10,
+    mainIngredients: ["米饭","鱼松","芝麻","海苔碎"],
+    emoji: "🐟",
+    allIngredients: [
+      {
+        "name": "热米饭",
+        "amount": "1碗"
+      },
+      {
+        "name": "鱼松",
+        "amount": "2勺"
+      },
+      {
+        "name": "白芝麻",
+        "amount": "少许"
+      },
+      {
+        "name": "海苔碎",
+        "amount": "少许"
+      },
+      {
+        "name": "酱油",
+        "amount": "几滴"
+      },
+      {
+        "name": "香油",
+        "amount": "几滴"
+      }
+    ],
+    steps: [
+      "热米饭盛碗",
+      "铺上鱼松海苔碎芝麻",
+      "滴几滴酱油和香油",
+      "拌匀开吃"
+    ],
+    tips: "最简单的儿童快手餐",
+    kidsFriendly: true,
+    tags: ["孩子爱","快手","主食"],
+  },
+  {
+    id: "zhen-zhu-wan-zi",
+    name: "珍珠丸子",
+    category: "meat",
+    cuisine: "home",
+    difficulty: 2,
+    cookingTime: 30,
+    mainIngredients: ["猪肉末","糯米","荸荠","生抽"],
+    emoji: "🥩",
+    allIngredients: [
+      {
+        "name": "猪肉末",
+        "amount": "250g"
+      },
+      {
+        "name": "糯米",
+        "amount": "100g提前泡4小时"
+      },
+      {
+        "name": "荸荠",
+        "amount": "3个"
+      },
+      {
+        "name": "生抽",
+        "amount": "1勺"
+      },
+      {
+        "name": "料酒",
+        "amount": "1勺"
+      },
+      {
+        "name": "姜末",
+        "amount": "少许"
+      },
+      {
+        "name": "盐",
+        "amount": "适量"
+      },
+      {
+        "name": "葱",
+        "amount": "1根"
+      }
+    ],
+    steps: [
+      "荸荠切碎和肉末调料搅打上劲",
+      "团成丸子",
+      "裹上泡好的糯米",
+      "摆入盘中",
+      "水开蒸20分钟",
+      "撒葱花"
+    ],
+    tips: "糯米像珍珠一样裹在外面",
+    kidsFriendly: true,
+    tags: ["孩子爱","蒸菜","宴客"],
+  },
 ];
 
 export default recipes;
